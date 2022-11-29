@@ -1,0 +1,136 @@
+<html>
+<head>
+	     <title> MAPEH </title> 
+	 <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@700&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="mainstyle.css"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <style>
+.u{
+    background-color:#fff;
+	border:2px solid #000;
+	width:800px;
+	margin:auto;
+	overflow: hidden;
+}
+
+.i{
+    font-family:Oswald;
+	text-align:Justify;
+}
+
+#h1{
+    font-family:Oswald; 
+	text-align:center;
+	text-decoration: underline #CBC3E3;
+}
+
+#h2{
+    font-family:Oswald; 
+	text-align:center;
+	text-color:#FFD580;
+}
+	 </style>
+</head>
+
+<body>
+
+		 <button class="go-top-btn">
+      <img src="arrow-up.png" alt="arrow up">
+    </button>
+
+<div class="header">
+<nav id="navbar">
+<img src="Socialliffe Logo.jpg" class="logo">
+           <ul id="menu">
+		      <li><a href="index.html">Home</a></li>
+              <li><a href="background.html">Significance of Study</a></li>
+              <li><a href="sip.html">SIP</a></li>
+              <li><a href="mapeh.html">PE</a></li>
+			  <button class="openbuttton" onclick ="openNavigation()"> More </button>
+		  </ul>
+</nav>
+</div>
+
+      <div class="banner"></div>
+	
+<div id="mapeh"><a name="mapeh"></a>
+		<a id="mapeh"><h3 id="h4">Mapeh Video</h1></a>		
+            <div class="a1">		
+			<blockquote><p class="a2">
+			<a href ="https://youtu.be/uEVzQwIuvD4" target = "_blank"><img src = "PELOGO.jpg" width = "775"></a>
+			</p></blockquote>
+	</div>
+			
+	
+<div id="mapeh"><a name="mapeh"></a>
+		<a id="mapeh"><h2 id="h1">About the Web Designer</h1></a>		
+            <div class="u">		
+			<blockquote><p class="i">
+			<img src="Simon.jpg"style="width:300px" vspace="10" hspace="10" align="left"/><!-- Use the <video> tag here to embed the video.-->
+			Simon Timothy M. Garcia is one of the few members of Grade 9 Borgia. As a member Ateneo de Davao University, Simon is an old student that has experience about Ateneo as a whole with different types of stories.
+			He loves to tallk about biology since that he has tons of knowledge of it, as an extrovert he likes to talk to many people vary from other extroverts and introverts. As any extrovert he helps any person that may need help even though it might be hard he tries to help them as best as he can.
+			As part of the Group he tries to answer and make different codes to see if it willl impact his work for his team.
+			</p></blockquote>
+	</div>
+
+        <div id="mySidebar" class="sidebar">
+        <div class="closebutton" onclick="closeNavigation()">x</div>
+        <div id="nav">Menu</div>
+		<div><a class="buttonA" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_qfTp0677AhX3xzgGHeXHDbIQFnoECAoQAw&url=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fmadrasah%23%3A~%3Atext%3Dmadrasah%252C%2520(Arabic%253A%2520%25E2%2580%259Cschool%2Cespecially%2520primary%2520or%2520secondary%2520education.&usg=AOvVaw1zfGx8atXFY8XMxqILj0Zb">Madrasah Wiki</a></div>
+		<div><a class="buttonA" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj087rN1K77AhW07HMBHaiwBJkQFnoECCsQAQ&url=https%3A%2F%2Fwww.everycrsreport.com%2Freports%2FRS21654.html&usg=AOvVaw2tmc06vo6UhmU1XyHn5_-s">institution's background</a></div>
+	</div>
+
+    <script>
+    function openNavigation() {
+    document.getElementById("mySidebar").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px"; 
+    }
+
+    function closeNavigation() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+
+	<script>
+const goTopBtn = document.querySelector('.go-top-btn');
+
+window.addEventListener('scroll', checkHeight)
+
+function checkHeight(){
+  if(window.scrollY > 200) {
+    goTopBtn.style.display = "flex"
+  } else {
+    goTopBtn.style.display = "none"
+  }
+}
+
+goTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
+    </script>
+
+
+<script>
+    var navbar = document.getElementById("navbar");
+	var menu  = document.getElementById("menu");
+	
+	window.onscroll = function(){
+	    if(window.pageYOffset >= menu.offsetTop){
+		    navbar.classList.add("sticky");
+		}
+		else{
+		    navbar.classList.remove("sticky");
+	    }
+	}
+	
+</script>
+
+</body>
+
+
+</html>
